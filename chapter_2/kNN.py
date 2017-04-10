@@ -14,6 +14,7 @@ def createDataSet():
     return group, labels
 
 def classify0(inX, dataSet, labels, k):
+    # return predicted label
     dataSetSize = dataSet.shape[0]
     diffMat = tile(inX, (dataSetSize, 1)) - dataSet
     sqDiffMat = diffMat**2
